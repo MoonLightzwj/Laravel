@@ -15,6 +15,14 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+Route::get('csv','CreateCSVController@create');
+
+Route::post('csv/store','CreateCSVController@store');
+
+
+
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
